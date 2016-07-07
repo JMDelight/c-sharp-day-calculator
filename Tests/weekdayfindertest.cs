@@ -69,5 +69,15 @@ namespace WeekdayFinder
       //Assert
       Assert.Equal(expectedResult, result);
     }
+    public void GetDay_ForDay29Month2Year4_Friday()
+    {
+      //Arrange
+      WeekdayFinder testFinder = new WeekdayFinder();
+      string expectedResult = "Friday";
+      //Act
+      string result = testFinder.GetDay(29, 2, 4);
+      //Assert
+      Assert.Equal(expectedResult, result);
+    }
   }
 }

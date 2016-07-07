@@ -11,6 +11,7 @@ namespace WeekdayFinder
     {
       int yearDays = 365 * (year - 1);
       yearDays += year/4; //leap year
+      // if (year % 4 == 0 && month <= 2) yearDays --;
       int totalDays = yearDays;
       totalDays += _DaysPassedBeforeThisMonth[month];
       totalDays += day;
