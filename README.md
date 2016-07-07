@@ -30,13 +30,17 @@
 #### Input: February 29th, 4
 #### Output: Friday
 
-### Return Name of Day for day after the year 100 CE
-#### Input: August 2nd, 102
-#### Output: Tuesday
-
-### Return Name of Day for day after the year 400 CE
-#### Input: April 4th, 404
+### Return Name of Day for day after the skipping of 11 days(Damn you 1752!!!!)
+#### Input: Spetember 14th, 1752
 #### Output: Monday
+
+### Return Name of Day for day after the year 1800 CE
+#### Input: August 2nd, 1802
+#### Output: Monday
+
+### Return Name of Day for day after the year 2000 CE
+#### Input: April 4th, 2004
+#### Output: Sunday
 
 ### Return Name of Any Day in Common Era
 #### Input: July 7th, 2016

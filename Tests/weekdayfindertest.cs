@@ -69,6 +69,7 @@ namespace WeekdayFinder
       //Assert
       Assert.Equal(expectedResult, result);
     }
+    [Fact]
     public void GetDay_ForDay29Month2Year4_Friday()
     {
       //Arrange
@@ -79,5 +80,72 @@ namespace WeekdayFinder
       //Assert
       Assert.Equal(expectedResult, result);
     }
+    [Fact]
+    public void GetDay_ForDay2Month8Year400_Thursday()
+    {
+      //Arrange
+      WeekdayFinder testFinder = new WeekdayFinder();
+      string expectedResult = "Thursday";
+      //Act
+      string result = testFinder.GetDay(2, 8, 400);
+      //Assert
+      Assert.Equal(expectedResult, result);
+    }
+    [Fact]
+    public void GetDay_ForDay6Month3Year1600_Thursday()
+    {
+      //Arrange
+      WeekdayFinder testFinder = new WeekdayFinder();
+      string expectedResult = "Thursday";
+      //Act
+      string result = testFinder.GetDay(6, 3, 1600);
+      //Assert
+      Assert.Equal(expectedResult, result);
+    }
+    [Fact]
+    public void GetDay_ForDay15Month4Year1703_Thursday()
+    {
+      //Arrange
+      WeekdayFinder testFinder = new WeekdayFinder();
+      string expectedResult = "Thursday";
+      //Act
+      string result = testFinder.GetDay(15, 4, 1703);
+      //Assert
+      Assert.Equal(expectedResult, result);
+    }
+    [Fact]
+    public void GetDay_ForDay15Month10Year1752_Sunday()
+    {
+      //Arrange
+      WeekdayFinder testFinder = new WeekdayFinder();
+      string expectedResult = "Sunday";
+      //Act
+      string result = testFinder.GetDay(15, 10, 1752);
+      //Assert
+      Assert.Equal(expectedResult, result);
+    }
+    [Fact]
+    public void GetDay_ForDay15Month10Year1852_Friday()
+    {
+      //Arrange
+      WeekdayFinder testFinder = new WeekdayFinder();
+      string expectedResult = "Friday";
+      //Act
+      string result = testFinder.GetDay(15, 10, 1852);
+      //Assert
+      Assert.Equal(expectedResult, result);
+    }
+    [Fact]
+    public void GetDay_ForDay14Month9Year1752_Thursday()
+    {
+      //Arrange
+      WeekdayFinder testFinder = new WeekdayFinder();
+      string expectedResult = "Thursday";
+      //Act
+      string result = testFinder.GetDay(14, 9, 1752);
+      //Assert
+      Assert.Equal(expectedResult, result);
+    }
+
   }
 }
