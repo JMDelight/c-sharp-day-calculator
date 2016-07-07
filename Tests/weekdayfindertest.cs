@@ -146,6 +146,50 @@ namespace WeekdayFinder
       //Assert
       Assert.Equal(expectedResult, result);
     }
+    [Fact]
+    public void GetDay_ForDay4Month4Year2004_Sunday()
+    {
+      //Arrange
+      WeekdayFinder testFinder = new WeekdayFinder();
+      string expectedResult = "Sunday";
+      //Act
+      string result = testFinder.GetDay(4, 4, 2004);
+      //Assert
+      Assert.Equal(expectedResult, result);
+    }
+    [Fact]
+    public void GetDay_ForDay7Month7Year2016_Thursday()
+    {
+      //Arrange
+      WeekdayFinder testFinder = new WeekdayFinder();
+      string expectedResult = "Thursday";
+      //Act
+      string result = testFinder.GetDay(7, 7, 2016);
+      //Assert
+      Assert.Equal(expectedResult, result);
+    }
+    [Fact]
+    public void GetDay_ForDay18Month7Year2544_Thursday()
+    {
+      //Arrange
+      WeekdayFinder testFinder = new WeekdayFinder();
+      string expectedResult = "Thursday";
+      //Act
+      string result = testFinder.GetDay(18, 7, 2554);
+      //Assert
+      Assert.Equal(expectedResult, result);
+    }
+    [Fact]
+    public void GetDay_ForDay31Month12Year3999_Friday()
+    {
+      //Arrange
+      WeekdayFinder testFinder = new WeekdayFinder();
+      string expectedResult = "Friday";
+      //Act
+      string result = testFinder.GetDay(31, 12, 3999);
+      //Assert
+      Assert.Equal(expectedResult, result);
+    }
 
   }
 }

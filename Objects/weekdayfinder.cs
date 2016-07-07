@@ -19,6 +19,7 @@ namespace WeekdayFinder
       if (year >= 1800)
       {
         yearDays -= (year - 1700) / 100;
+        yearDays += (year - 1600) / 400;
       }
       int totalDays = yearDays;
       totalDays += _DaysPassedBeforeThisMonth[month];
