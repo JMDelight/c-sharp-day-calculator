@@ -37,13 +37,24 @@ namespace WeekdayFinder
       Assert.Equal(expectedResult, result);
     }
     [Fact]
-    public void GetDay_ForDay10Month2Year1_Monday()
+    public void GetDay_ForDay10Month2Year1_Thursday()
     {
       //Arrange
       WeekdayFinder testFinder = new WeekdayFinder();
       string expectedResult = "Thursday";
       //Act
       string result = testFinder.GetDay(10, 2, 1);
+      //Assert
+      Assert.Equal(expectedResult, result);
+    }
+    [Fact]
+    public void GetDay_ForDay17Month4Year2_Monday()
+    {
+      //Arrange
+      WeekdayFinder testFinder = new WeekdayFinder();
+      string expectedResult = "Monday";
+      //Act
+      string result = testFinder.GetDay(17, 4, 2);
       //Assert
       Assert.Equal(expectedResult, result);
     }
